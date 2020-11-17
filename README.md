@@ -11,11 +11,11 @@ API and APP keys are setup in Datadog here
   - EU https://app.datadoghq.eu/account/settings#api
   - US https://app.datadoghq.com/account/settings#api
 
-Expose API and APP keys as environment variables.
+Expose environment variables.
 
 ```bash
-export DATADOG_API_KEY=xxxxxxxxxxxxxxxxxx
-export DATADOG_APP_KEY=yyyyyyyyyyyyyyyyyy
+export DD_API_KEY=xxxxxxxxxxxxxxxxxx
+export DD_APP_KEY=yyyyyyyyyyyyyyyyyy
 export DD_HOST=https://api.datadoghq.eu/    (or https://api.datadoghq.com/ for USA)
 export TF_VAR_cluster_name=my_es_cluster    (this is optional, also set in variables.tf)
 ```
