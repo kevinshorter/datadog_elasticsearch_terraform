@@ -1,4 +1,4 @@
-# Datadog Terraform Elasticsearch
+# Datadog Elasticsearch Terraform
 
 Create Datadog monitors for Elasticsearch with Terraform.
 

@@ -68,3 +68,87 @@ variable es_mon_thread_pool_search_queue {
     thresholds_critical = 1000
   }
 }
+
+variable es_mon_thread_pool_write_queue {
+  description = "es_thread_pool_write_queue"
+  type = object({
+    thresholds_ok       = number
+    thresholds_warning  = number
+    thresholds_critical = number
+  })
+  default = {
+    thresholds_ok       = 100
+    thresholds_warning  = 500
+    thresholds_critical = 1000
+  }
+}
+
+variable es_mon_pending_tasks_total {
+  description = "es_pending_tasks_total"
+  type = object({
+    thresholds_ok       = number
+    thresholds_warning  = number
+    thresholds_critical = number
+  })
+  default = {
+    thresholds_ok       = 0
+    thresholds_warning  = 5
+    thresholds_critical = 10
+  }
+}
+
+variable es_mon_pending_tasks_priority_high {
+  description = "es_pending_tasks_priority_high"
+  type = object({
+    thresholds_ok       = number
+    thresholds_warning  = number
+    thresholds_critical = number
+  })
+  default = {
+    thresholds_ok       = 0
+    thresholds_warning  = 5
+    thresholds_critical = 10
+  }
+}
+
+variable es_mon_pending_tasks_priority_urgent {
+  description = "es_pending_tasks_priority_urgent"
+  type = object({
+    thresholds_ok       = number
+    thresholds_warning  = number
+    thresholds_critical = number
+  })
+  default = {
+    thresholds_ok       = 0
+    thresholds_warning  = 5
+    thresholds_critical = 10
+  }
+}
+
+variable es_mon_indexing_index_total {
+  description = "es_indexing_index_total"
+  type = object({
+    thresholds_ok       = number
+    thresholds_warning  = number
+    thresholds_critical = number
+  })
+  default = {
+    thresholds_ok       = 0
+    thresholds_warning  = 5
+    thresholds_critical = 10
+  }
+}
+
+variable es_mon_thread_pool_bulk_rejected {
+  description = "es_thread_pool_bulk_rejected"
+  type = object({
+    thresholds_ok       = number
+    thresholds_warning  = number
+    thresholds_critical = number
+  })
+  default = {
+    thresholds_ok       = 100
+    thresholds_warning  = 500
+    thresholds_critical = 1000
+  }
+}
